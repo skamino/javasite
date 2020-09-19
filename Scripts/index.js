@@ -14,9 +14,9 @@
         })
     }
     function check_cred(){
-        let uname = document.getElementById("inputEmail");
+        let uname = document.getElementById("inputEmail").value;
         console.log(uname);
-        let pass = document.getElementById("inputPassword");
+        let pass = document.getElementById("inputPassword").value;
         console.log(pass);
         let steve = document.getElementById("isteve");
         if(steve.checked == true)
