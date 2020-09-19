@@ -44,6 +44,7 @@
             let html = document.getElementsByTagName("body")[0];
             html.innerHTML = XHR.responseText;
 
+            control_button();
         });
     }
 
