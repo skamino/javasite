@@ -6,10 +6,10 @@
     }
     function control_button(){
         let butt_object = document.getElementsByName("button");
-        butt_object[0].addEventListener("click", function(event)){
+        butt_object[0].addEventListener("click", function(event){
             Event.preventDefault();
             check_cred();
-        }
+        })
     }
     function check_cred(){
         let uname = document.getElementById("inputEmail").innerHTML;
