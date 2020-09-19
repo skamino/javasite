@@ -15,10 +15,19 @@
         })
     }
     function check_cred(){
-        let uname = document.getElementById("inputEmail").innerHTML;
+        let uname = document.getElementById("inputEmail");
         console.log(uname);
-        let pass = document.getElementById("inputPassword").innerHTML;
+        let pass = document.getElementById("inputPassword");
         console.log(pass);
+        let steve = document.getElementById("isteve");
+        if(steve.checked == true)
+        {
+            continue;
+        }
+        else{
+            alert("please love me");
+            continue;
+        }
         if(uname === "peter" && pass === "welly"){
             //send to the real index page
             console.log("uname and password correct");
