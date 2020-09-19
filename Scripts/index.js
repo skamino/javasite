@@ -8,7 +8,6 @@
     }
     function control_button(){
         let butt_object = document.getElementsByTagName("button");
-        console.log(butt_object);
         butt_object[0].addEventListener("click", function(event){
             event.preventDefault();
             check_cred();
@@ -22,16 +21,31 @@
         let steve = document.getElementById("isteve");
         if(steve.checked == true)
         {
-            continue;
+            console.log("checked")                
         }
         else{
             alert("please love me");
-            continue;
         }
         if(uname === "peter" && pass === "welly"){
             //send to the real index page
             console.log("uname and password correct");
         }
     }
+
+    //where we make it more like an angular site
+    function loadStart()
+    {
+        let title = document.title;
+
+        let XHR = new XMLHttpRequest();
+        XHR.open("GET", "./Partial/signin.html");
+        XHR.send();
+        XHR.addEventListener("readystatechange", function(){
+            let html = document.getElementsByTagName("body")[0];
+            html.innerHTML = XHR.responseText;
+
+        });
+    }
+
     window.addEventListener("load", Start, false);
 })();
