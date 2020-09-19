@@ -7,7 +7,8 @@
         control_button();
     }
     function control_button(){
-        let butt_object = document.getElementsByName("button");
+        let butt_object = document.getElementsByTagName("button");
+        console.log(butt_object);
         butt_object[0].addEventListener("click", function(event){
             event.preventDefault();
             check_cred();
