@@ -16,7 +16,9 @@
     }
     function check_cred(){
         let uname = document.getElementById("inputEmail").innerHTML;
+        console.log(uname);
         let pass = document.getElementById("inputPassword").innerHTML;
+        console.log(pass);
         if(uname === "peter" && pass === "welly"){
             //send to the real index page
             console.log("uname and password correct");
