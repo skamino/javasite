@@ -15,20 +15,18 @@
     }
     function check_cred(){
         let uname = document.getElementById("inputEmail").value;
-        console.log(uname);
         let pass = document.getElementById("inputPassword").value;
-        console.log(pass);
         let steve = document.getElementById("isteve");
-        if(steve.checked == true)
-        {
-            console.log("checked")                
-        }
+        if(steve.checked == true){}
         else{
             alert("please love me");
         }
         if(uname === "peter" && pass === "welly"){
             //send to the real index page
-            console.log("uname and password correct");
+            document.cookie = "peter welly; path=/";
+            window.location.replace("https://skamino.github.io/javasite/auth");
+        } else {
+            window.location.replace("https://skamino.github.io/javasite/auth");
         }
     }
 
