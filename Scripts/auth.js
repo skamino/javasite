@@ -71,7 +71,7 @@
         let partial = "./Partial/" + page + ".html";
         console.log(partial);
 
-        XHR.open("GET", parital);
+        XHR.open("GET", partial);
         XHR.send();
         XHR.addEventListener("readystatechange", function(){
             let main_body = document.getElementsByTagName("main")[0];
