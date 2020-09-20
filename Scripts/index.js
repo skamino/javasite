@@ -24,9 +24,9 @@
         if(uname === "peter" && pass === "welly"){
             //send to the real index page
             document.cookie = "peter welly; path=/";
-            window.location.replace("https://skamino.github.io/javasite/auth");
+            window.location.replace("https://skamino.github.io/javasite/auth.html");
         } else {
-            window.location.replace("https://skamino.github.io/javasite/auth");
+            window.location.replace("https://skamino.github.io/javasite/auth.html");
         }
     }
 
