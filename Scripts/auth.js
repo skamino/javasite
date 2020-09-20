@@ -3,6 +3,8 @@
 (function() {
     function Start()
     {
+        console.log("auth started...");
+        val_cookie();
         //call the loader
     }
 
