@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 (function() {
     function Start()
@@ -21,7 +21,7 @@
         XHR.addEventListener("readystatechange", function(){
             let main_body = document.getElementsByTagName("main")[0];
             main_body.innerHTML = XHR.responseText;
-            
+
         })
     }
 

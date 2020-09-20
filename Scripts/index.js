@@ -23,7 +23,9 @@
         }
         if(uname === "peter" && pass === "welly"){
             //send to the real index page
-            document.cookie = "peter welly; path=/";
+            let date = new Date(Date.now() + 86400e3);
+            date = date.toUTCString();
+            document.cookie = "peter welly; max-age=3600; path=/auth.html";
             window.location.replace("https://skamino.github.io/javasite/auth.html");
         } else {
             window.location.replace("https://skamino.github.io/javasite/auth.html");
