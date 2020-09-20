@@ -25,7 +25,7 @@
             //send to the real index page
             let date = new Date(Date.now() + 86400e3);
             date = date.toUTCString();
-            document.cookie = "peter welly; max-age=3600; path=/auth.html";
+            document.cookie = "peter welly; max-age=3600; secure; path=/auth.html";
             window.location.replace("https://skamino.github.io/javasite/auth.html");
         } else {
             window.location.replace("https://skamino.github.io/javasite/auth.html");
