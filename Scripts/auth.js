@@ -10,7 +10,7 @@
     function val_cookie(){
         let cookie = document.cookie;
         console.log(cookie);
-        if(cookie.username === "peter welly"){
+        if(cookie.username === "username=peter welly"){
             load_page();
         } else {
             //window.location.replace("https://www.google.ca");
