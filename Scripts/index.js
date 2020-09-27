@@ -28,7 +28,7 @@
             document.cookie = "username=peter welly; max-age=3600; secure; path=/auth.html";
             window.location.replace("https://skamino.github.io/javasite/auth.html");
         } else {
-            window.location.replace("https://skamino.github.io/javasite/auth2.html");
+            window.location.replace("https://skamino.github.io/javasite/auth.html");
         }
     }
 
