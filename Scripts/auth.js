@@ -14,6 +14,7 @@
             load_page();
         } else {
             //window.location.replace("https://www.google.ca");
+            console.log("something not working");
         }
     }
 
