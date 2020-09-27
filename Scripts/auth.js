@@ -15,7 +15,8 @@
         } else {
             //window.location.replace("https://www.google.ca");
         }
-
+        let x = document.cookie;
+        console.log(x);
     }
 
     function load_page()
