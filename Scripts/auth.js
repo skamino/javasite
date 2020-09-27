@@ -10,11 +10,11 @@
     function val_cookie(){
         let cookie = document.cookie;
         console.log(cookie);
-        if(cookie.username === "username=peter welly"){
+        if(cookie === "username=peter welly"){
             load_page();
         } else {
             //window.location.replace("https://www.google.ca");
-            console.log("something not working");
+            console.log("something not working2");
         }
     }
 
