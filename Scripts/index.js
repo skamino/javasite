@@ -32,7 +32,7 @@
         }
     }
 
-    //where we make it more like an angular site
+    //where we make it more like an angular site use this
     function loadStart()
     {
         let title = document.title;
